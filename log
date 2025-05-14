@@ -241,3 +241,7 @@ Wed, May 14, 2025 12:34:30 AM:
 Compilation failed
 gcc.exe: error: std=C99: No such file or directory
 0a41d03
+Wed, May 14, 2025 12:34:33 AM: 
+Compilation failed
+gcc.exe: error: unrecognized command line option '-std=C99'
+48a598b
