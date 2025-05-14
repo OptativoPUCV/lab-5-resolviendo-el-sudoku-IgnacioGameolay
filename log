@@ -175,3 +175,61 @@ test.c:7:8: warning: '_strdup' redeclared without dllimport attribute: previous 
  char * _strdup(const char * str) {
         ^
 758a588
+Wed, May 14, 2025 12:34:07 AM: 
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:49:3: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+   for (int i = 0; i < 9; i++) {
+   ^
+sudoku.c:49:3: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+sudoku.c:50:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int k = 0; k < 10; k++) seen[k] = 0;
+       ^
+sudoku.c:51:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int j = 0; j < 9; j++) {
+       ^
+sudoku.c:60:3: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+   for (int j = 0; j < 9; j++) {
+   ^
+sudoku.c:61:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int k = 0; k < 10; k++) seen[k] = 0;
+       ^
+sudoku.c:62:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int i = 0; i < 9; i++) {
+       ^
+sudoku.c:71:3: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+   for (int k = 0; k < 9; k++) {
+   ^
+sudoku.c:72:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int m = 0; m < 10; m++) seen[m] = 0;
+       ^
+sudoku.c:73:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int p = 0; p < 9; p++) {
+       ^
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:89:3: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+   for (int i = 0; i < 9 && !found; i++) {
+   ^
+sudoku.c:90:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int j = 0; j < 9 && !found; j++) {
+       ^
+sudoku.c:93:15: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+               for (int num = 1; num <= 9; num++) {
+               ^
+sudoku.c: In function 'is_final':
+sudoku.c:110:3: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+   for (int i = 0; i < 9; i++) {
+   ^
+sudoku.c:111:7: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+       for (int j = 0; j < 9; j++) {
+       ^
+sudoku.c: In function 'DFS':
+sudoku.c:141:7: error: invalid use of void expression
+       while ((adj_node = ((Node*) popFront(adj))) != NULL) {
+       ^
+test.c: At top level:
+test.c:7:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+ char * _strdup(const char * str) {
+        ^
+ab8c3d4
