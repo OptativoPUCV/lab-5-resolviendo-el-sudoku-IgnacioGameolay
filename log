@@ -245,3 +245,15 @@ Wed, May 14, 2025 12:34:33 AM:
 Compilation failed
 gcc.exe: error: unrecognized command line option '-std=C99'
 48a598b
+Wed, May 14, 2025 12:34:38 AM: 
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:141:7: error: invalid use of void expression
+       while ((adj_node = ((Node*) popFront(adj))) != NULL) {
+       ^
+test.c: At top level:
+test.c:7:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+ char * _strdup(const char * str) {
+        ^
+88d4d3b
