@@ -233,3 +233,7 @@ test.c:7:8: warning: '_strdup' redeclared without dllimport attribute: previous 
  char * _strdup(const char * str) {
         ^
 ab8c3d4
+Wed, May 14, 2025 12:34:24 AM: 
+Compilation failed
+gcc.exe: error: std=c99: No such file or directory
+8a2bd2f
